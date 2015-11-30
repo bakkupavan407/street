@@ -1,0 +1,33 @@
+<html>
+<head><title>DashBoard</title>
+
+    <script type="text/javascript" src="JavaScript/noBack.js"></script>
+
+    <link rel="stylesheet" href="Styles/dashBoard.css" type="text/css">
+    <script type="text/javascript" src="JavaScript/dashboard1.js"></script>
+   </head>
+
+<body >
+
+	<div id="dashboard">
+        <div>
+            <select id="umdiv" onchange="changeDashBoard()";>
+            <option>Select Type</option>
+            <option>User</option>
+            <option>Merchant</option>
+            </select>
+        </div>
+		<div id="user">
+			<span class="block" onclick="addOrders();">User</span>
+			
+            <span class="block" onclick="viewItems();">Items</span>
+		</div>
+        <div id="order"></div>
+        <div id="details">
+        </div>
+        <div id="sum"></div>
+		
+		</div>
+		
+</body>
+</html>

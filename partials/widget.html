@@ -1,0 +1,260 @@
+
+<div class="container-fluid" id="ss-container">
+    <section id="ss-shoppingList">
+        <div class="scroller">
+            <article class="ss-bags">
+                <div class="ss-bag" ng-repeat="bags in shoppingList">
+                    <div class="clearfix">
+                        <span class="fontweight">Total</span>
+                        <span class="bagPrice pull-right">{{"Rs "+totalPrice.toFixed(2)}}</span>
+                    </div>
+                    <p class="deliveryon" id="deliveryon" ng-show="item.name">Delivery on <span id="dateDisplay"></span><!--{{bags.deliveryDate}}--></p>
+                    <div class="ss-itemList">
+                        <div ng-repeat="item in bags.items" id="IndexTypeDiv">
+                            <input type="text" placeholder="Type here to add a product" id="bindItem" class="itemName" ng-model="item.name" ng-class="item.isActive" ng-change="checkItem(item)" />
+                            <input ng-show="item.name" type="text" placeholder="Qunatity" class="itemUnits" id="bindQuantity" ng-model="item.quantity" ng-class="item.isActive" ng-change="setPrice()" /> <span class="itemMeasure">{{item.unit}}</span>
+                            <span ng-show="item.name" class="itemPrice" id="itemPrice">{{"Rs "+(item.price * item.quantity).toFixed(2)}}</span><img ng-show="item.name" src="img\close-icon.png" ng:click="removeItem($index)" title="Delete item" class="closebtn" />
+                        </div>
+                    </div>
+                </div>
+                <div class="cartFooter">
+                    <div id="deliveryDate" style="float:left;width:100px;">                     
+            <input type='text' id='sel'placeholder="Delivery Date" style="border: 1px solid" size="10" readonly='readonly'/>
+                    </div>
+                    <div class="grandTotal" style="float:right">
+                        
+                        Total: {{"Rs "+totalPrice.toFixed(2)}}</div>               
+
+                    <p id="buyNowBtn" class="PlaceOrder">
+                        <button id="margrgt" class="continueButton" disabled="disabled">Continue to place the Order</button></p>
+
+                </div>
+            </article>
+        </div>
+        <a href="javascript:;" id="showCart">Show Cart</a>
+    </section>
+    <section id="ss-shoppingCart">
+        <article class="ss-cart-container" id="ss-cart-container">
+            <p class="ss-cart-title">See into entire collection of <span>Value Mart, Ameerpet</span></p>
+            <div class="ss-container">
+                <div class="ss-cart-filters">
+                    <!--<span>Add items from a category</span>-->
+                    <!--<select ng-model="orderProp" onchange="resizeProdImages();">
+                        <option ng-repeat="productCat in products" value="{{productCat.category}}">{{productCat.category}}</option>
+                    </select>-->
+                    <select ng-model="catName" onchange="resizeProdImages();" class="lftMargin5" id="lftMargin5">
+                        <option value="" selected="selected">SelectCategory</option>
+                        <!--<option value="">All Items</option>-->
+                        <option ng-repeat="productCat in products" value={{productCat.category}}>{{productCat.category}}</option>
+                    </select>
+                    <input ng-model="query" style="display:none" placeholder="Type here for the required product" class="search" onkeyup="resizeProdImages()" id="searchItems">
+                </div>
+
+
+                <ul class="ss-cart-items" ng-model="catName" id="ss-cartText">
+                    <li ng-repeat="product1 in offerData | filter:catName">
+                        <ul class="ss-cartProdList">
+                            <li ng-repeat="goods in product1.items">
+                                <!--<p class="pimage">-->
+                                <p id="itmName1"><strong>{{goods.name}}</strong></p>
+                                <p id="itmimage"><img ng-src={{goods.image}} class="resizeme" onclick="callOverlay1()" ng-model="selectOfferItem" ng-click="$parent.selected1=goods" ng-class="{active:selected1==goods}" /></p>
+
+                                <div ng-model="selectOfferItem">
+                                    <div class="overlay" id="overlay1" style="display:none" onclick="closeOverlay1();">
+
+                                    </div>
+                                    <div class="modal" id="modal1" style="display:none">
+                                        <button type="button" class="close" aria-hidden="true" onclick="closeOverlay1();">
+                                            &times;
+                                        </button>
+					 <div class="overlayStrip"><h4 class="itemsoverlay">Item Details</h4></div>
+                                        <div><img ng-src="{{selected1.image ||0 }} " class="imgoverlay" /></div>
+                                        <div>
+
+                                            <p class="overlayP"><label class="labelOverlay"><span class="overspan1">Item</span><span class="overspan2">:</span><span class="overspan3">{{selected1.name}}</span></label> </p>
+                                            <p class="overlayP"><label class="labelOverlay"><span class="overspan1">Price</span><span class="overspan5">:</span><span class="overspan3">&#x20B9;{{"\t"+((selected1.price)-((selected1.price*selected1.offer)/100))}} <sub> {{"Per \t"+selected1.unit}}</sub></span> </label></p>
+                                            <p class="overlayP"><label class="labelOverlay"><span class="overspan1">Category</span><span class="overspan4">:</span><span class="overspan3">{{selected1.type}}</span></label></p>
+                                            <p><a href="javascript:;" ng-click="addToTemp(selected1.name, selected1.price, selected1.unit,selected1.offer,2)" class="large blue button">Add to Cart</a></p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+
+
+                                <!--<p class="itemPrice">{{"Rs "+goods.price}}<sub id="Sub1"> per kg</sub></p>-->
+                                <p class="itemPrice2" id="itemPrice1">{{"Rs "+goods.price}} {{goods.unit}} </p>
+                                <!-- </p>-->
+                                <p class="itemPrice" id="offerPriceText">{{"Offer Price:"+((goods.price)-((goods.price*goods.offer)/100))}}</p>
+                                <!--<a href="javascript:;" ng-click="addToList(goods.name, goods.price, 1)">Add to Bag</a>-->
+                                <p id="addtoBag2"><a href="javascript:;" ng-click="addToTemp(goods.name, goods.price, goods.unit,goods.offer,1)" class="btn btn-small" id="addtoBag3">Add to Cart</a></p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="ss-cart-items" ng-model="catName" style="display:none" id="cartItems">
+                    <li ng-repeat="product in products | filter: catName">
+                        <ul class="ss-cartProdList">
+                            <li ng-repeat="goods in product.items| filter:query">
+                                <p class="pimage">
+                                <p id="itmName"><strong>{{goods.name}}</strong></p>
+                                <p><img ng-src={{goods.image}} class="resizeme" onclick="callOverlay()" ng-click="$parent.selected=goods" ng-class="{active:selected==goods}" ng-model="selectItem" /></p>
+
+
+                                <div ng-model="selectItem">
+                                    <div class="overlay" id="overlay" style="display:none" onclick="closeOverlay();">
+
+                                    </div>
+                                    <div class="modal" id="modal" style="display:none">
+                                        <button type="button" class="close" aria-hidden="true" onclick="closeOverlay();">
+                                            &times;
+                                        </button>
+<div class="overlayStrip"><h4 class="itemsoverlay">Item Details</h4></div>
+                                        <div><img ng-src="{{selected.image ||0 }} " class="imgoverlay" /></div>
+                                        <div>
+
+                                            <p class="overlayP"><label class="labelOverlay"><span class="overspan1">Item</span><span class="overspan2">:</span><span class="overspan3">{{selected.name||0}}</span></label> </p>
+                                            <p class="overlayP"><label class="labelOverlay"><span class="overspan1">Price</span><span class="overspan5">:</span><span class="overspan3">&#x20B9;{{"\t"+selected.price}} <sub> {{"Per \t"+selected.unit}}</sub></span> </label></p>
+                                            <p class="overlayP"><label class="labelOverlay"><span class="overspan1">Category</span><span class="overspan4">:</span><span class="overspan3">{{selected.type||0}}</span></label></p>
+                                            <p><a href="javascript:;" ng-click="addToTemp(selected.name, selected.price, selected.unit,selected.offer,0)" class="large blue button">Add to Cart</a></p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <p class="itemPrice">{{"Rs "+goods.price}}<sub id="measures"> {{goods.unit}}</sub></p>
+                                <!--<p class="itemPrice">{{"Rs "+goods.price}} per kg </p>-->
+                                </p>
+                                <!--<p ><span id="offerPriceText">{{"Offer Price:"+((goods.price)-((goods.price*goods.offer)/100))}}</span></p>-->
+                                <p id="addtoBag"><a href="javascript:;" ng-click="addToTemp(goods.name, goods.price, goods.unit,goods.offer,1)" class="btn btn-small" id="addtoBag1">Add to Cart</a></p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </article>
+    </section>
+    <nav id="ss-prodSuggest" style="display:none;" tabindex="-1" class="hideEle">
+        <ul>
+            <li ng-repeat="listItem in suggetionsList" ng-click="addToList(listItem.name, listItem.price, listItem.unit, 0)" tabindex="{{$index}}">
+                <a href="javascript:;">{{listItem.name}}<span class="pull-right">{{"Rs "+listItem.price}} </span></a>
+            </li>
+        </ul>
+    </nav>
+    <nav id="ss-unitSuggest" style="display:none;" tabindex="-1" class="hideEle">
+        <ul>
+            <li ng-repeat="itemUnit in measuresList" ng-click="updateQuantity(itemUnit)" tabindex="{{$index}}">
+                <a href="javascript:;">{{itemUnit}}</a>
+            </li>
+        </ul>
+    </nav>
+    <nav id="ss-bagSelect" style="display:none;" tabindex="-1" class="hideEle">
+        <ul>
+            <li ng-repeat="bag in shoppingList" tabindex="{{$index}}" ng-click="selectBag(bag.name)">
+                <a href="javascript:;">{{bag.name}}</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+
+<!--<div style="display: none;" id="signin" class="ss-modalBox">
+    <a class="modal_close" href="javascript:;">X</a>
+    <p class="title">Sign-in to complete the order</p>
+    <form action="" name="signIn">
+        <p>
+            <label>Phone number</label>
+            <input type="text" name="phone" placeholder="Enter your phone number" />
+        </p>
+        <p>
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Enter your password" />
+        </p>
+        <p>
+            <label></label>
+            <span><a href="Registration.aspx">Are you a first time visitor to Sivan Street?</a></span>
+        </p>
+        <p>
+            <label></label>
+            <span><a href="javascript:;" class="btn btn-large btn-inverse">Log In</a></span>
+        </p>
+    </form>
+</div>-->
+<script>
+    //$("#setDeliveryBtn a").leanModal({ top : 100, overlay : 0.4, closeButton: ".modal_close" });
+    $("#buyNowBtn a").leanModal({ top: 100, overlay: 0.4, closeButton: ".modal_close" });
+
+    function setDeliDate() {
+        //alert("ok");
+        document.getElementById("deliveryDate").style.display = "";
+        document.getElementById("buyNowBtn").style.display = "none";
+        document.getElementById("setDeliveryBtn").style.display = "none";
+
+    }
+
+    function resizeProdImages() {
+        var selectedCategory = document.getElementById("lftMargin5");
+        var category = selectedCategory.options[selectedCategory.selectedIndex].text;
+        //alert(category);
+        if (category != "SelectCategory") {
+            document.getElementById("cartItems").style.display = "";
+            document.getElementById("searchItems").style.display = "";
+            document.getElementById("ss-cartText").style.display = "none";
+        } else {
+            document.getElementById("cartItems").style.display = "none";
+            document.getElementById("searchItems").style.display = "none";
+            document.getElementById("ss-cartText").style.display = "";
+        }
+        setTimeout(function () {
+
+            $(".resizeme").aeImageResize({ width: 160 });
+        }, 142);
+    }
+    resizeProdImages();
+
+function callOverlay() {
+        document.getElementById("overlay").style.display = "";
+        document.getElementById("modal").style.display = "";
+
+    }
+    function closeOverlay() {
+        document.getElementById("overlay").style.display = "none";
+        document.getElementById("modal").style.display = "none";
+
+    }
+    function callOverlay1() {
+        document.getElementById("overlay1").style.display = "";
+        document.getElementById("modal1").style.display = "";
+
+    }
+    function closeOverlay1() {
+        document.getElementById("overlay1").style.display = "none";
+        document.getElementById("modal1").style.display = "none";
+
+    }
+ $(function () {
+        $("#sel").datepicker({
+            minDate:'0',
+            dateFormat: "d MM yy",
+            onClose: function (theDate) {
+                $("#sel").value = theDate;
+                if (theDate == "" || theDate == null) {
+                    document.getElementById("errorMsgDiv").style.display = "";
+                    document.getElementById("errorMsgSpan").innerHTML = "*" + "  " + "Please Place the Delivery Date to Continue";
+                }
+                else if (angular.element($(".ss-bag")).scope().shoppingList[0].items[0].name == "" || angular.element($(".ss-bag")).scope().shoppingList[0].items[0].quantity == "") {
+                    document.getElementById("errorMsgDiv").style.display = "";
+                    document.getElementById("errorMsgSpan").innerHTML = "*" + "  " + "Please Place the Order to go Forward";
+
+                }
+                else {
+                    document.getElementById("margrgt").disabled = false;
+                    document.getElementById("margrgt").style.backgroundColor = "#428bca";
+                }
+            }
+        });
+    });
+
+</script>

@@ -1,0 +1,478 @@
+﻿/**:focus {
+	outline: 0;
+}*/
+
+body, html{
+	width:100%;
+	margin: 0;
+	overflow-x:hidden;
+   font-size:13px;
+   font-family:Helvetica,Arial, sans-serif;
+}
+
+.loginbutton {
+	height:30px; 
+	width:100px;
+	border-radius:5px;
+	float:left;
+	border: 0px solid #EBE6E2;
+	background-color: #28b78d;
+	color:white;
+}
+
+input[type=button]:hover { 
+outline: none;
+cursor:pointer; 
+}
+
+header{
+	margin: 0 auto;
+	width: 100%;
+	height:80px;
+	background-color:#f3f2f2;
+}
+
+header span.ss-logo{
+	width: 200px;
+	height: 60px;
+	padding: 10px 0px;
+	/*margin-left:20px;*/
+	background: transparent url(images/sivan-street-logo.png) no-repeat 0 20px;
+	display: inline-block;
+	/*margin: 3px 0px 0px 0px;*/	
+}
+	header span.ss-logo:hover {
+		cursor:pointer;
+	}
+
+header span.ss-user{
+	margin: 20px 0 0 0;
+	font-size:12px;
+	text-align: right;
+}
+
+header span.ss-user span {
+	margin: 0 15px;
+	color: #336699;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+header span.ss-user span a {
+	color: #336699;
+}
+
+#ss-merchant{
+	margin: 0 auto;
+	width: 100%;
+	height: 9px;
+	color: #333;
+	border-bottom: 1px solid #ffffff;
+	background: #808080;
+}
+
+#ss-subMerchant
+{
+	margin: 0 auto;
+	width: 100%;
+	height: 25px;
+	border-bottom: 1px solid #e0e0e0;
+	color: #333;
+	background-color: #fafafa;
+}
+
+
+
+#main {
+	 margin: 0 auto; 
+	/*margin-top:80px;*/  
+	/*margin-top:75px;*/
+	/*background-color:#e5e4e3;*/
+	color: #6f8a79;
+	width: 960px;
+	/*padding:10px ;*/
+	height: auto;
+	font-family: Helvetica,Arial, sans-serif;
+	overflow: hidden;
+	margin-bottom:25px;
+}
+.main-height{height:456px;}
+#main.login{height:490px}
+
+.nav > .pull-right {
+  float: right;
+}
+.pull-right {
+  float: right;
+  }
+
+#merchantName {
+	color: green;
+	font-weight: bold;
+}
+
+h3{
+	color:#6f8a79;	
+}
+
+/*#storediv{
+display:none
+
+}*/
+
+/*New CSS for Login Form*/
+.dispBlok {
+	display:block;
+	margin:4px 0 10px 0;
+}
+lable {
+margin-bottom:14px;
+font-weight:bold;
+}
+
+#guestHide {
+margin:0 auto;
+
+}
+
+
+
+input[type=text]{
+width:240px;
+height:24px;
+border: 1px solid #ccc;
+padding-left:5px;
+border-radius:5px;
+}
+input[type=password]{
+width:240px;
+height:24px;
+border: 1px solid #ccc;
+padding-left:5px;
+border-radius:5px;
+}
+
+input[type=textarea]{
+width:240px;
+height:100px;
+}
+.textArea
+{
+	width:240px;
+	height:84px;
+
+	padding-left:5px;
+	border-radius:5px;
+
+}
+.selectBox {
+width:248px;
+height:29px;
+border:1px solid #ccc;
+border-radius:5px;
+
+}
+.errorSpan {
+color:red;
+margin-left:15px;
+font-size:11px;
+}
+#orderMsg {
+color:green;
+font-size:14px;
+}
+
+.withOutLogin
+{
+	margin-left:20px;
+	color:#7d0083;
+}
+	.withOutLogin:hover
+	{
+	cursor:pointer;
+	}
+
+.top-container {
+	width:960px;
+	margin:0 auto;
+}
+
+.footer {
+	width: 100%;
+	/*height: 51px;*/
+	margin: 5px 0 0 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-top: 1px solid #e0e0e0;
+	/*background: #fafafa;*/
+	background-color:#243743;
+	color: #ffffff;
+	clear: both;
+	text-align: center;
+	position:relative;
+    	bottom:0;
+}
+.borderDiv
+{
+	float: left;
+	border-right: 1px solid #7d0083;
+	height: 300px;
+	margin-top:27px;
+	/*width:20px;*/
+}
+.sgborderDiv
+{
+	border-bottom: 1px solid #6f8a79;
+	margin:10px 0px;
+	/*width:20px;*/
+}
+.rightButton
+{
+	height: 30px;
+	width: 100px;
+	/*border: 0px solid #EBE6E2;*/
+	border:none;
+	background-color: #28b78d;
+	color: white;
+	float:right;
+	border-radius:5px;
+}
+
+.editOrder
+{
+float:right;
+margin:0px auto;
+width:520px;
+}
+
+.addressContainer
+{
+	width:400px;
+	float:left;
+}
+
+.OrderEditAddress
+{
+display:inline-block;
+min-width:160px;
+
+}
+
+.orderEditDiv
+{
+margin:10px 0 0 0 ;
+width:520px;
+border-bottom:1px solid #cccccc;
+padding:0 0 10px 10px;
+}
+
+.checkClass2
+{
+margin-right:40px;
+}
+
+#hiddendiv {
+   display:inline; 
+}
+.forgotPwd
+{
+margin:3px 0 15px 0;
+font-size:11px;
+}
+.forgotPwd:hover
+{
+	cursor:pointer;
+}
+#maindiv
+{
+border:1px solid #cccccc;
+margin-top:25px;
+ width:518px;
+height:400px;
+overflow-y:auto;
+overflow-x:hidden;
+}
+#black-strip
+{
+
+background-color:#243743;
+height:30px;
+}
+.pull-right2 {
+width:960px;
+margin:0 auto;
+color:white;
+
+}
+.span_address #chek
+{
+margin-left:0px;
+padding-left:0;
+}
+
+.span_address #chek:hover{
+cursor:pointer;
+}
+
+.pull-right2 span
+{
+float:right;
+margin-left:30px;
+padding-top:5px;
+}
+
+.pull-right2 span:hover
+{
+cursor:pointer;
+}
+
+.pull-right2 a
+{
+color:white;
+float:left;
+padding-top:5px;
+text-decoration:none;
+}
+
+.pull-right2 a:hover
+{
+color:white;
+text-decoration:underline;
+}
+.errorMsgDisp
+{
+background-color:#f4f0cb;
+color:#d23641;
+width:960px;
+margin:8px auto;
+height:30px;
+padding-top:8px;
+font-weight:bold;
+/*border:1px solid red;*/
+}
+	.errorMsgDisp span
+	{
+	padding-left:328px;
+	color:red;
+	font-size:14px;
+	}
+ .pickAtStore
+{
+float:right;
+width:960px;
+margin-top:150px;
+}
+.PickStore
+{
+width:508px;
+margin-top:15px;
+}
+   .PickStore input
+   {
+   
+   cursor:pointer;
+   }
+   
+   .PickStore span 
+   {
+   margin-left:5px;
+   }
+
+	/*============================================================*/
+   /*---------------------- Login css ---------------------------*/
+
+#loginForm {
+	width:720px; border:1px solid #CCCCCC; margin:50px auto 0 auto; padding:15px; 
+}
+
+#loginId {
+ width:350px; padding:0; float:left; border-right:1px solid #6f8a79; 
+}
+
+#RegisterId {
+	width: 735px;
+	float: left;
+	display:none;
+}
+
+#loginForm H3 {
+	font-size:20px; padding:0; margin:0 0 20px 0;
+}
+
+#loginForm input[type="text"], #loginForm input[type="password"], #altAddress input[type="text"], #aform1 input[type="password"]{
+	width:85%; height:20px; font-size:12px; border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px; border:1px solid #CCC; padding:3px 5px;
+}
+ #loginForm select, #altAddress select{
+	width:89%; height:25px; font-size:12px; border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px; border:1px solid #CCC; padding:3px 5px;
+}
+
+#loginForm input[type="button"], #aform1 input[type="button"]{
+	width:35%; height:30px; font-size:13px; font-weight:bold; border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px;
+}
+.forgotPwd a {
+	color: #7d0083; text-decoration:none;
+}
+	.forgotPwd a:hover {
+		text-decoration:underline;
+	}
+
+#newUser {
+	width:320px; float:right; 
+}
+	#newUser input[type="button"] {
+		background:#c86368; width:50%;
+	}
+
+
+#loginForm textArea, #altAddress textArea{
+	width:85%; height:80px; font-size:12px; border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px; border:1px solid #CCC; padding:3px 5px;
+}
+#loginForm #RegisterId input[type="text"], #loginForm #RegisterId input[type="password"],  {
+	height:16px
+}
+
+#loginForm label, #aform1 lable, .addressContainer label{
+	font-size:12px; font-weight:bold;
+}
+
+#RegisterId .rBlock1 {
+	float:left; width:350px
+}
+#RegisterId .rBlock2 {
+	float:right; width:350px
+}
+
+
+#altAddress, #shAddress {
+	border:none; padding:10px; margin:25px 0 15px 0; background:#f5f5f5;
+}
+
+#altAddress input[type="text"], #aform1 input[type="password"], #altAddress textArea, #altAddress select{
+	width:300px;
+	height:25px;
+	border:none;
+	margin-left:20px;
+}
+#altAddress select{
+	width:320px;
+	height:25px;
+}
+
+
+ /*====================================================================================================*/
+/*----------------------------------ORDER MESSAGE CSS-------------------------------------------------*/
+
+.Registerclass {
+	width: 735px;
+	float: left;	
+}
+.Registerclass .rBlock1{
+	float:left; 
+	width:350px
+}
+.Registerclass .rBlock2{
+  float:right; width:350px
+}
+.loginFormClass h3{
+	font-size:20px; padding:0; margin:0 0 20px 0;
+}

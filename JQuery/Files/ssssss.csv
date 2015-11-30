@@ -1,0 +1,18 @@
+pid,type,name,price,image,quantity,unit,measures,offer,promotion
+SF001,Fruits,Apple,25,images/Apple.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.15,1,no
+SF002,Fruits,Acorn,10,images/acorn.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.16,1,no
+SF003,Fruits,Apricot,30,images/apricot.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.17,1,no
+SF004,Fruits,Avocado,15,images/avocado.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.18,1,no
+SF005,Fruits,Banana,20,images/Banana.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.19,1,yes
+SF006,Fruits,Black sapote,55,images/black sapote.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.20,1,yes
+SF007,Fruits,Brombeeren,30,images/brombeeren.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.21,1,yes
+SF008,Fruits,Blueberries,10,images/blueberries.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.22,1,yes
+SF009,Fruits,Cacao,28,images/cacao.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.23,1,yes
+SF010,Fruits,Cantaloupe,16,images/cantaloupe.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.24,1,yes
+SF011,Fruits,Carambola,23,images/carambola.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.25,1,yes
+SF012,Fruits,Cherry,18,images/cherry.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.26,1,yes
+SF013,Fruits,Citron,36,images/Citron.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.27,1,yes
+SF014,Fruits,Clementine,24,images/clementine.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.28,1,yes
+SF005,Fruits,Banana20,20,images/Banana.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.19,1,yes
+SF0062,Fruits,Black sapote,55,images/black sapote.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.20,1,yes
+,Fruits,Brombeeren,30,images/brombeeren.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.21,1,yes

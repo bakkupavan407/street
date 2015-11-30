@@ -1,0 +1,281 @@
+//----------------------------------------------------------------------****End*******************------------------------------------------------------------------------------------------------------
+function makeAjax(urls, methods, querystring, responses) {
+url = urls;
+method = methods;
+callback = responses;
+sendeddata = querystring;
+loadAjax(url, method, sendeddata, callback);
+}
+
+function loadAjax(url, method, sendeddata, callback) {
+//alert(sendeddata);
+if (window.XMLHttpRequest) {
+xml_http = new XMLHttpRequest();
+}
+else {
+xml_http = new ActiveXObject("Microsoft.XMLHTTP");
+}
+
+xml_http.open(method, url, true);
+xml_http.setRequestHeader("content-type", "application/x-www-form-urlencoded");
+xml_http.send("pavan1=" + sendeddata);
+
+xml_http.onreadystatechange = function () {
+if (xml_http.readyState == 4 && xml_http.status == 200) {
+var str_respo = xml_http.responseText;
+callback(str_respo);
+
+}
+}
+}
+function login25(y) {
+
+//alert(xmlhttp.responseText);
+if (parseInt(y) == 0) {
+document.getElementById("logPwd").innerHTML = "*Invalid Password";
+}
+else if (parseInt(y) == 2) {
+document.getElementById("logMob").innerHTML = "*You have not activated your link";
+} else if (parseInt(y) == 7) {
+document.getElementById("logMob").innerHTML = "*Invalid Mobile";
+}
+else if (parseInt(y) == 100) {
+location.href='dashBoard.aspx';
+}
+else if (parseInt(y) == 1234) {
+document.getElementById("logMob").innerHTML = "*Invalid Mobile/E-mail";
+}
+else {
+zz = JSON.parse(y);
+
+//alert('value of zz is'+zz);
+//bb = zz.mobileNo;
+pmobile = zz.type;
+//alert(pmobile);
+orderstatus = zz.orderstatus;
+//alert(orderstatus);
+orederregtoship = zz.registeredtoship;
+//alert(orederregtoship);
+document.getElementById('form123').reset();
+redirect2();
+}
+
+}
+
+function login2() {
+//alert("working");
+// window.open(Address.aspx);
+document.getElementById("success").innerHTML = "Registered Successfully !<br/> Please check your email to confirm link";
+// frmRef.reset();
+}
+function anotherFunc() {
+location.href = 'Ordermessage.aspx';
+}
+function loadAddres(y) {
+var y10 = y;
+zzz = JSON.parse(y10);
+aa = zzz.Name;
+bbb = zzz.mobileNo;
+cc = zzz.address;
+dd = zzz.pincode;
+ee = zzz.city;
+ff = zzz.state;
+editOrd = zzz.order;
+alert(editOrd);
+document.getElementById('amob').innerHTML = bbb + '<br><br>'
+document.getElementById('amob').innerHTML += cc + '<br><br>'
+document.getElementById('amob').innerHTML += ee + '<br><br>'
+document.getElementById('amob').innerHTML += dd + '<br><br>';
+
+//var order = "{"+"\"\siva\":[" + editOrder + "]}";
+var shippingdiv = document.getElementById('orderEdit');
+
+var orderfinal = JSON.parse(editOrd);
+// alert(orderfinal.Items[0].Name);
+
+var ItemDiv = document.createElement("div");
+ItemDiv.id = "maindiv";
+var itemhead = document.createElement("div");
+itemhead.className = "orderEditDiv";
+var iname1 = document.createElement("div");
+// iname1.style.width= "190px";
+iname1.className = "OrderEditAddress";
+var iQty1 = document.createElement("div");
+iQty1.className = "OrderEditAddress";
+//iQty1.style.width = "190px";
+var iPrice1 = document.createElement("div");
+//iPrice1.style.width = "190px";
+iPrice1.className = "OrderEditAddress";
+var IName1 = document.createTextNode("Name");
+var IQty1 = document.createTextNode("Quantity");
+var IPrice1 = document.createTextNode("Price");
+iname1.appendChild(IName1);
+iQty1.appendChild(IQty1);
+iPrice1.appendChild(IPrice1);
+itemhead.appendChild(iname1);
+itemhead.appendChild(iQty1);
+itemhead.appendChild(iPrice1);
+ItemDiv.appendChild(itemhead);
+
+
+
+for (var z = 0; z < orderfinal.Items.length; z++) {
+var fItem = document.createElement("div");
+fItem.className = "orderEditDiv";
+var fIName = document.createElement("div");
+// fIName.style.width = "190px";
+fIName.className = "OrderEditAddress";
+var fIQty = document.createElement("div");
+//fIQty.style.width = "190px";
+fIQty.className = "OrderEditAddress";
+var fIPrice = document.createElement("div");
+//fIPrice.style.width = "190px";
+fIPrice.className = "OrderEditAddress";
+var IName = document.createTextNode(orderfinal.Items[z].Name);
+var IQty = document.createTextNode(orderfinal.Items[z].Quantity);
+var IPrice = document.createTextNode(orderfinal.Items[z].Price);
+fIName.appendChild(IName);
+fIQty.appendChild(IQty);
+fIPrice.appendChild(IPrice);
+fItem.appendChild(fIName);
+fItem.appendChild(fIQty);
+fItem.appendChild(fIPrice);
+ItemDiv.appendChild(fItem);
+}
+shippingdiv.appendChild(ItemDiv);
+var editButton = document.createElement("input");
+editButton.setAttribute("type", "Button");
+editButton.setAttribute("onclick", "editItems()");
+editButton.setAttribute("value", "Edit Order");
+shippingdiv.appendChild(editButton);
+}
+function mobileValid(y1) {
+var clear3 = document.getElementById('regMob');
+clear3.innerHTML = "";
+//alert(typeof (y1));
+if (parseInt(y1) == 0) {
+document.getElementById("regMob").innerHTML = "*Mobile Already Exists";
+}
+else {
+document.getElementById("regMob").innerHTML = "";
+}
+}
+function emailValid(y4) {
+var clear5 = document.getElementById('regEmail');
+clear5.innerHTML = "";
+if (parseInt(y4) == 0) {
+document.getElementById("regEmail").innerHTML = "*Email Already Exists";
+emailfield.focus();
+}
+else {
+document.getElementById("regEmail").innerHTML = "";
+}
+}
+function useridValid(rep_y54) {
+if (parseInt(rep_y54) == 1) {
+document.getElementById('logMob').innerHTML = "";
+}
+else {
+document.getElementById('logMob').innerHTML = "Seems Invalid Email / Mobile";
+document.getElementById('mob1').focus();
+}
+}
+function onloadResp(rep_y) {
+var url = location.href;
+var urlno = url.lastIndexOf("/");
+var urlstore = url.substr(urlno + 1);
+//alert(urlstore);
+var sname2 = document.getElementById("soreIds");
+
+var log_resp = JSON.parse(rep_y);
+//alert(log_resp);
+var logResp = log_resp.response;
+var order = log_resp.stores;
+var gOrder = log_resp.myorder;
+//alert(order);
+var order1 = JSON.parse(order);
+//alert(order1[0]);
+
+//alert(rep_y);
+if (parseInt(logResp) == 1) {
+//location.href = 'index.html';
+document.getElementById('logout').style.display = "";
+document.getElementById('loginspan').style.display = "none";
+}
+if (parseInt(logResp) == 0) {
+document.getElementById('logout').style.display = "none";
+}
+if (order1.length != 0) {
+//alert("hii");
+var mainDiv = document.getElementById("top-container");
+var storeSelect = document.getElementById("indexSelect");
+
+for (var i = 0; i < order1.length; i++) {
+// alert(order1[i]);
+var options = document.createElement("option");
+options.setAttribute("value", order1[i]);
+options.innerHTML = order1[i];
+//options.appendChild(opttext);
+storeSelect.appendChild(options);
+}
+// mainDiv.appendChild(selectStore);
+//alert(sname2);
+var ddl = document.getElementById('indexSelect');
+var opts = ddl.options.length;
+for (var i = 0; i < opts; i++) {
+if (ddl.options[i].value == sname2.innerHTML) {
+ddl.options[i].selected = true;
+break;
+}
+}
+//alert(gOrder);
+}
+
+}
+function ordermsgLoadResp(rep_y4g) {
+if (parseInt(rep_y4g) == 0) {
+document.getElementById("guestHide").style.display = "";
+document.getElementById("storediv").style.display = "none";
+document.getElementById('g_order').style.display = "none";
+document.getElementById('g_visiblespan').style.display = "";
+
+}
+else {
+document.getElementById('g_visiblespan').style.display = "none";
+}
+
+}
+function dashBoardLoad(rep_y4) {
+
+if (parseInt(rep_y4) == 11) {
+location.href = 'dashBoard.aspx';
+}
+else if (parseInt(rep_y4) == 1) {
+alert('No orders to display');
+location.href = "index.html";
+}
+else
+if (parseInt(rep_y4) == 12) {
+location.href = 'dashBoard.aspx';
+}
+
+else {
+alert("Please Login to View dashboard");
+location.href = 'LoginPage.aspx';
+}
+}
+
+function gustOrderCeck(rep_y54) {
+//alert(rep_y4);
+if (parseInt(rep_y54) == 1) {
+location.href = 'GuestUser.aspx';
+}
+else {
+alert("Please Place the Order to Continue");
+location.href = 'index.html';
+}
+
+}
+function storeNameload(){
+///document.getElementById("ss-container").load(store_name);
+} 

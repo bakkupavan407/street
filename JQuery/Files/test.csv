@@ -1,0 +1,4 @@
+pid,name,type,price,quantity
+A100,APPLE,FRUIT,10,200
+,GRAPE,FRUIT,20,29
+V001,BEET ROOT,VEGETABLE,,23

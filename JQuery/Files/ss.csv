@@ -1,0 +1,62 @@
+pid,type,name,price,image,quantity,unit,measures,offer,promotion
+SF001,Fruits,Apple,25,images/Apple.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.15,1,no
+SF002,Fruits,Acorn,10,images/acorn.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.16,1,no
+SF003,Fruits,Apricot,30,images/apricot.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.17,1,no
+SF004,Fruits,Avocado,15,images/avocado.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.18,1,no
+SF005,Fruits,Banana,20,images/Banana.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.19,1,yes
+SF006,Fruits,Black sapote,55,images/black sapote.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.20,1,yes
+SF007,Fruits,Brombeeren,30,images/brombeeren.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.21,1,yes
+SF008,Fruits,Blueberries,10,images/blueberries.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.22,1,yes
+SF009,Fruits,Cacao,28,images/cacao.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.23,1,yes
+SF010,Fruits,Cantaloupe,16,images/cantaloupe.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.24,1,yes
+SF011,Fruits,Carambola,23,images/carambola.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.25,1,yes
+SF012,Fruits,Cherry,18,images/cherry.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.26,1,yes
+SF013,Fruits,Citron,36,images/Citron.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.27,1,yes
+SF014,Fruits,Clementine,24,images/clementine.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.28,1,yes
+SF015,Fruits,Coconut,15,images/coconut.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.29,1,yes
+SF016,Fruits,Corn,10,images/corn.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.30,1,yes
+SF017,Fruits,Cranberry,48,images/cranberry.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.31,1,yes
+SF018,Fruits,Currant,78,images/currant.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.32,0,yes
+SF019,Fruits,Dates,65,images/dates.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.33,0,yes
+SF020,Fruits,Durian,35,images/durian.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.34,0,yes
+SF021,Fruits,Elderberries,28,images/elderberries.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.35,0,yes
+SF022,Fruits,Figs,90,images/figs.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.36,0,yes
+SF023,Fruits,Grapefruit,55,images/grapefruit.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.37,0,yes
+SF024,Fruits,Grapes,45,images/grapes.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.38,0,yes
+SF025,Fruits,Greenapple,20,images/greenapple.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.39,1,yes
+SF026,Fruits,Green-grapes,25,images/green-grapes.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.40,1,yes
+SF027,Fruits,Guava,10,images/guava.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.41,1,no
+SF028,Fruits,Hawthorn,31,images/hawthorn.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.42,1,no
+SF029,Fruits,Joneydewmelon,37,images/honeydewmelon.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.43,1,no
+SF030,Fruits,Jackfruit,99,images/jackfruit.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.44,1,no
+SF031,Fruits,Kiwifruit,65,images/kiwifruit.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.45,1,no
+SF032,Fruits,Lemons,5,images/lemons.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.46,1,no
+SF033,Fruits,Lychee,43,images/lychee.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.47,1,no
+SF034,Fruits,Mango,12,images/mango.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.48,1,no
+SF035,Fruits,Melon,12,images/melon.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.49,1,no
+SF036,Fruits,Mulberry,21,images/mulberry.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.50,1,no
+SF037,Fruits,Nectarine,16,images/nectarine.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.51,1,no
+SF038,Fruits,Olive,10,images/olive.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.52,1,no
+SF039,Fruits,Orange,19,images/orange.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.53,1,no
+SF040,Fruits,Papaya,30,images/papaya.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.54,1,no
+SF041,Fruits,Passion,27,images/passion.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.55,1,no
+SF042,Fruits,Pawpaw,45,images/pawpaw.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.56,0,no
+SF043,Fruits,Peach,65,images/peach.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.57,0,no
+SF044,Fruits,Pear,10,images/pear.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.58,0,no
+SF045,Fruits,Pineapple,35,images/pineapple.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.59,0,no
+SF046,Fruits,Plum,22,images/plum.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.60,0,no
+SF047,Fruits,Pomegranates,25,images/pomegranates.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.61,0,no
+SF048,Fruits,Quince,18,images/quince.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.62,1,no
+SF049,Fruits,Radishes,50,images/radishes.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.63,1,yes
+SF050,Fruits,Raisins,18,images/raisins.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.64,1,yes
+SF051,Fruits,Raspberries,22,images/raspberries.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.65,1,yes
+SF052,Fruits,Redgrape,50,images/redgrape.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.66,0,yes
+SF053,Fruits,Satsuma,65,images/satsuma.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.67,0,yes
+SF054,Fruits,Shea-nuts,10,images/shea-nuts.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.68,0,yes
+SF055,Fruits,Victoria plum,32,images/victoria plum.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.69,0,yes
+SF056,Fruits,Watermelon,95,images/watermelon.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.70,0,yes
+SB001,beverages,Pepsi Regular,10,images/pepsi.jpg,200,L,0.3;0.5;1;2.5,0,yes
+SB002,beverages,Pepsi Diet,10,images/pepsi-diet.jpg,200,L,0.3;0.5;1;2.6,1,yes
+SB003,beverages,Pepsi Atom,10,images/pepsi-atom.jpg,200,L,0.3;0.5;1;2.7,1,yes
+SB004,beverages,Pepsi Light,10,images/pepsi-light.jpg,200,L,0.3;0.5;1;2.8,1,yes
+SB005,beverages,Pepsi Can,10,images/pepsi-can.jpg,200,L,0.3;0.5;1;2.9,1,yes

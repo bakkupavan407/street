@@ -1,0 +1,9 @@
+pid,type,name,price,image,quantity,unit,measures,offer,promotion
+SF001,Fruits,Apple,25,images/Apple.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.15,1,no
+SF002,Fruits,Acorn,10,images/acorn.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.16,1,no
+SF001,Fruits,Apricot,30,images/apricot.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.17,1,no
+SF004,Fruits,Avocado,15,images/avocado.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.18,1,no
+SF005,Fruits,Banana,20,images/Banana.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.19,1,yes
+BF407,Fruits,BAKKU,20,images/Banana.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.19,1,yes
+BF407,Fruits,PAVANKUMARBAKKU,20,images/Banana.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.19,1,yes
+SF004,Fruits,Avocado15,15,images/avocado.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.18,1,no

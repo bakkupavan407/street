@@ -1,0 +1,7 @@
+pid,type,name,price,image,quantity,unit,measures,offer,promotion
+SV001,vegetables,Aubergine,25,images/aubergine.jpg,100,Kg,1;1.5;2;2.5;3;4;5;10.00,1,yes
+SV002,vegetables,Beetroot,10,images/beetroot.jpg,200,Kg,1;1.5;2;2.5;3;4;5;10.01,1,yes
+SV003,vegetables,Blackyebeans,30,images/blackeyebeans.jpg,100,Kg,1;1.5;2;2.5;3;4;5;10.02,1,yes
+SV004,vegetables,Broadbean,15,images/broadbean.jpg,200,Kg,1;1.5;2;2.5;3;4;5;10.03,1,yes
+SV005,vegetables,Broccoli,20,images/broccoli.jpg,50,Kg,1;1.5;2;2.5;3;4;5;10.04,1,yes
+SV005,vegetables,Broccoli,20,images/broccoli.jpg,50,Kg,1;1.5;2;2.5;3;4;5;10.04,1,yes

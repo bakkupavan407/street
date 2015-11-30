@@ -1,0 +1,14 @@
+pid,type,name,price,image,quantity,unit,measures,offer,promotion
+SB001,,Pepsi Regular,100,images/pepsi.jpg,200,L,0.3;0.5;1;2.5,0,yes
+SB002,beverages,Pepsi Diet,1000,images/pepsi-diet.jpg,200,L,0.3;0.5;1;2.6,1,yes
+,vegetables,CarrotRoots,,images/CarrotRoots.jpg,150,Kg,1;1.5;2;2.5;3;4;5;10.05,1,yes
+SV007,vegetables,,30,images/Cauliflower.jpg,300,Kg,1;1.5;2;2.5;3;4;5;10.06,1,yes
+SV008,vegetables,Okra,10,images/okra.jpg,150,Kg,1;1.5;2;2.5;3;4;5;10.07,0,yes
+SV010,vegetables,Potato,16,images/Potato.jpg,300,Kg,1;1.5;2;2.5;3;4;5;10.09,0,yes
+SF001,Fruits,Apple,25,images/Apple.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.15,1,no
+SF002,Fruits,Acorn,10,images/acorn.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.16,1,no
+SF003,Fruits,Apricot,30,images/apricot.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.17,1,no
+SF004,Fruits,Avocado,15,images/avocado.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.18,1,no
+SF005,Fruits,Banana,20,images/Banana.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.19,1,yes
+SF001,Fruits,Apple12,25,images/Apple.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.15,1,no
+SF0025,Fruits,Acorn,10,images/acorn.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.16,1,no

@@ -1,0 +1,5 @@
+pid,type,name,price,image,quantity,unit,measures,offer,promotion
+SB001,beverages,Pepsi Regular,10,images/pepsi.jpg,200,L,0.3;0.5;1;2.5,0,yes
+SB002,beverages,Pepsi Diet,10,images/pepsi-diet.jpg,200,L,0.3;0.5;1;2.6,1,yes
+SB003,beverages,Pepsi Atom,10,images/pepsi-atom.jpg,200,L,0.3;0.5;1;2.7,1,yes
+SB003,beverages,Pepsi Atom,10,images/pepsi-atom.jpg,200,L,0.3;0.5;1;2.7,1,yes

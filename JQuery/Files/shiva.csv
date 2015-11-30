@@ -1,0 +1,3 @@
+pid,name,type,price,quantity
+F001,Apple,fruit,100,200
+F543,Banana,fruit,,300

@@ -1,0 +1,47 @@
+﻿body {
+
+}
+
+#design {
+    width: 957px;
+    /*height:900px;*/
+    font-size:14px;
+    font-family: 'Trebuchet MS', Arial, Verdana;
+    /*border:1px solid #008bae;*/
+    border-color:#008bae;
+}
+
+#menu {
+    width: 960px;
+    height: 35px;
+    /*background-color:#8f8f8f;*/
+    background-color:#008bae;
+    padding: 16px 0px 0px 10px;
+}
+
+#menucontent {
+    width: 960px;
+}
+
+ul {
+    font-weight: bold;
+    margin:0px auto;
+}
+li {
+    padding: 0px 40px 0px 0px;
+    color:white;
+    float:left;
+    list-style:none;
+}
+
+    li:hover {
+        cursor: pointer;
+    }
+
+#l3 {
+    margin: 0px 0px 0px 520px;
+}
+
+#redi {
+    color: white;
+}

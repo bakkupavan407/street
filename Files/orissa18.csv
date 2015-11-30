@@ -1,0 +1,17 @@
+pid,type,name,price,image,quantity,unit,measures,offer,promotion
+SV001,vegetables,Aubergine,25,images/aubergine.jpg,100,Kg,1;1.5;2;2.5;3;4;5;10.00,1,yes
+SV002,vegetables,Beetroot,10,images/beetroot.jpg,200,Kg,1;1.5;2;2.5;3;4;5;10.01,1,yes
+SV003,vegetables,Blackyebeans,30,images/blackeyebeans.jpg,100,Kg,1;1.5;2;2.5;3;4;5;10.02,1,yes
+SV004,vegetables,Broadbean,15,images/broadbean.jpg,200,Kg,1;1.5;2;2.5;3;4;5;10.03,1,yes
+SV005,vegetables,Broccoli,20,images/broccoli.jpg,50,Kg,1;1.5;2;2.5;3;4;5;10.04,1,yes
+SF001,Fruits,Apple,25,images/Apple.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.15,1,no
+SF002,Fruits,Acorn,10,images/acorn.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.16,1,no
+SF003,Fruits,Apricot,30,images/apricot.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.17,1,no
+SF004,Fruits,Avocado,15,images/avocado.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.18,1,no
+SF005,Fruits,Banana,20,images/Banana.jpg,500,Kg,1;1.5;2;2.5;3;4;5;10.19,1,yes
+SB001,beverages,Pepsi Regular,10,images/pepsi.jpg,200,L,0.3;0.5;1;2.5,0,yes
+SB002,beverages,Pepsi Diet,10,images/pepsi-diet.jpg,200,L,0.3;0.5;1;2.6,1,yes
+SB003,beverages,Pepsi Atom,10,images/pepsi-atom.jpg,200,L,0.3;0.5;1;2.7,1,yes
+SB004,beverages,Pepsi Light,10,images/pepsi-light.jpg,200,L,0.3;0.5;1;2.8,1,yes
+SB005,beverages,Pepsi Can,10,images/pepsi-can.jpg,200,L,0.3;0.5;1;2.9,1,yes
+SB005,beverages,Pepsi Can,10,images/pepsi-can.jpg,200,L,0.3;0.5;1;2.9,1,yes
